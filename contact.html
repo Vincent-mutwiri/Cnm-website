@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sunday School Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="Pictures\logo.png" width="100" height="100" alt="Sunday School Logo" id="logo">
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="curriculum.html">Curriculum</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="teachers-corner.html">Teacher's Corner</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-info">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you! Whether you have a question, suggestion, or just want to say hello.</p>
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                                <small class="error-message"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                                <small class="error-message"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject:</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <small class="error-message"></small>
+                            </div>
+                            <button type="submit" class="cta-button">Send Message</button>
+                        </form>
+                        <div id="form-status"></div>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Our Address</h3>
+                        <p>Jericho<br>Makadara, Nairobi</p>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:CharlesNewmethodist.org">Charles New Methodist.org</a></p>
+                        <h3>Call Us</h3>
+                        <p>+254741951392</p>
+                        <!-- Optional: Google Maps Embed -->
+                         <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.803075245722!2d36.868074673207616!3d-1.292574935629339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f13e1ab8e8c1f%3A0x62f964545c77130!2sCharles%20New%20Methodist%20Church!5e0!3m2!1sen!2ske!4v1746640686106!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> Sunday School Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

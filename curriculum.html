@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum - Sunday School Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="Pictures\logo.png" width="100" height="100" alt="Sunday School Logo" id="logo">
+            <h1>Sunday School Curriculum</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="curriculum.html" class="active">Curriculum</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="teachers-corner.html">Teacher's Corner</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="curriculum-overview">
+            <div class="container">
+                <h2>Our Teaching Plan</h2>
+                <p>Explore the lessons planned for our students. You can filter by age group and month.</p>
+
+                <div class="filters">
+                    <label for="age-group-filter">Age Group:</label>
+                    <select id="age-group-filter">
+                        <option value="all">All Ages</option>
+                        <option value="preschool">Preschool (3-5)</option>
+                        <option value="elementary">Elementary (6-8)</option>
+                        <option value="preteen">Preteen (9-12)</option>
+                    </select>
+
+                    <label for="month-filter">Month:</label>
+                    <select id="month-filter">
+                        <option value="all">All Months</option>
+                        <!-- Months will be populated by JS -->
+                    </select>
+                </div>
+
+                <div id="curriculum-grid">
+                    <!-- Curriculum items will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="current-year"></span> Sunday School Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
